@@ -9,10 +9,14 @@ const pokeStat = document.querySelectorAll(".stat");
 inputButton.addEventListener("click", ()=>{
     fetchPokemon(inputField.value);
 })
-
+inputField.addEventListener("keypress", (e)=>{
+    if(e.key === "Enter"){
+        fetchPokemon(inputField.value);
+    }
+})
 async function fetchPokemon(id){
     try{
-        const res = await fetch(getURL(id));
+        const res = await fetch(getURL(id.trim().toLowerCase()));
         const pokemonData = await res.json();
         displayPokemonInfo(pokemonData);
     } catch{
