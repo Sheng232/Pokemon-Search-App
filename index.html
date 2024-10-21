@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Search App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="app-title">Pokemon Search App</h1>
+    </header>
+    <main class="flexbox">
+        <div class="container">
+            <div class="bold-text">Search for Pokémon Name or ID:</div>
+            <div class="search-bar">
+                <input class="pokemon-search" type="text" placeholder="pokemon">
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="pokemon-info">
+                <div class="pokemon-name">BULBASAUR #1</div>
+                <div class="weight-height">Weight: 69 Height: 7</div>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" class="pokemon-image"/>
+                <div class="pokemon-element no-background">
+                    <span class="flexbox poison">grass</span>
+                    <span class="flexbox grass">poison</span>
+                </div>
+                <div class="stats-title">Base Stats</div>
+            </div>
+            <div class="pokemon-stats">
+                <div class="stat stats-hp">HP: 45</div>
+                <div class="stat stats-attack">Attack: 49</div>
+                <div class="stat stats-defense">Defensee: 49</div>
+                <div class="stat stats-sp-attack">Sp.Attack: 65</div>
+                <div class="stat stats-sp-defense">Sp.Defense: 65</div>
+                <div class="stat stats-speed">Speed: 45</div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
